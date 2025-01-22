@@ -1,0 +1,42 @@
+= Abbreviation Inline Macro Extension
+:abbr-LNT: tla:LNT[Leave No Trace]
+
+== Directly using macro in source
+
+Climbed to Everest tla:ABC[Advanced Base Camp]!
+
+Everest tla:ABC[Advanced Base Camp] is 6340 meters elevation.
+
+include::sample-inc.adoc[]
+
+== Using document attributes
+
+Example of using document attribute to add the inline macro extension:
+
+{abbr-LNT}
+
+I say again, "{abbr-LNT}"
+
+== Todos
+
+features/questions to answer that would make this more useful:
+
+* better pdf support
+** currently just repeat every title of the abbreviation
+** is there programmatic tooltip like functionality in pdf?
+* generate a list of abbreviations section
+** this could then be linked to in pdf/html form
+
+== Running
+
+From repo top level dir:
+
+.generate html example:
+```
+asciidoctor  -r ./lib/abbreviate-inline-macro.rb lib/abbreviate-inline-macro/sample.adoc
+```
+
+.generate pdf example:
+```
+asciidoctor-pdf  -r ./lib/abbreviate-inline-macro.rb lib/abbreviate-inline-macro/sample.adoc
+```

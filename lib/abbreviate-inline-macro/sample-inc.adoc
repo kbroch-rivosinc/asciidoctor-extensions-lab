@@ -1,0 +1,7 @@
+== List of hiking acronyms
+
+Some popular hiking acronyms:
+
+* tla:JMT[John Muir Trail]
+* tla:AT[Appalachian Trail]
+* tla:PCT[Pacific Crest Trail]
